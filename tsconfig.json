@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Современный JavaScript
+    "module": "CommonJS", // Подходит для Node.js
+    "rootDir": "./src", // Где хранятся исходные .ts файлы
+    "outDir": "./dist", // Куда компилировать .js файлы
+    "strict": true, // Включает все строгие проверки типов
+    "esModuleInterop": true, // Для корректного импорта npm-пакетов
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node", // Разрешение модулей по правилам Node.js
+    "resolveJsonModule": true, // Чтобы можно было импортировать .json
+    "skipLibCheck": true, // Пропустить проверку типов в node_modules
+    "allowJs": false, // Можно отключить, если не используешь JS
+    "noImplicitAny": true // Предупреждать, если тип `any` не указан явно
+  },
+  "include": ["src"], // Только папка с исходниками
+  "exclude": ["node_modules", "dist"] // Исключаем лишнее
+}
